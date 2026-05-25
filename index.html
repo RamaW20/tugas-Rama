@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Portofolio | Rama Wahyu Kusuma</title>
+  </head>
+  <body>
+    <button id="theme-btn" class="theme-btn">🌙 Mode Gelap</button>
+
+    <div class="container">
+      <div class="sidebar">
+        <nav>
+          <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Tugas RPL</a></li>
+            <li><a href="#">Project Gua</a></li>
+            <li><a href="#">Kontak</a></li>
+          </ul>
+        </nav>
+      </div>
+      <main class="content">
+        <section class="hero">
+          <img src="online.png" alt="Foto Profil Rama" />
+          <div class="hero-content">
+            <h1>Halo, Gua Rama Wahyu Kusuma</h1>
+            <h2>Siswa Kelas X-RPL di SMKN 15 Jakarta</h2>
+            <p>
+              Gua adalah siswa jurusan Rekayasa Perangkat Lunak (RPL) yang lagi seru-serunya ngulik dunia <i>coding</i> dan <i>web development</i>. 
+              Website ini gua jadiin wadah buat nyimpen hasil tugas sekolah, eksperimen baris kode, dan portofolio <i>project</i> yang lagi gua kerjain.
+            </p>
+            <a href="https://wa.me/62895335166547" target="_blank" class="action-btn">Chat Gua di WA</a>
+          </div>
+        </section>
+      </main>
+      <div class="footer">
+        <footer>
+          <ul>
+            <li>
+              <a href="https://www.instagram.com/ramaw_09?igsh=cDdjdDJ1c2ZsMXht" target="_blank">
+                <img src="instagram.png" alt="IG" /><p>Instagram</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://wa.me/62895335166547" target="_blank">
+                <img src="whatsapp.png" alt="WA" /><p>WhatsApp</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://discord.com/app" target="_blank">
+                <img src="discord.png" alt="DC" /><p>Armsloth_</p>
+              </a>
+            </li>
+          </ul>
+        </footer>
+      </div>
+    </div>
+
+    <script>
+      const themeBtn = document.getElementById('theme-btn');
+      themeBtn.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        
+        // Ganti teks tombol
+        if (document.body.classList.contains('dark-mode')) {
+          themeBtn.textContent = '☀️ Mode Terang';
+        } else {
+          themeBtn.textContent = '🌙 Mode Gelap';
+        }
+      });
+    </script>
+  </body>
+</html>
